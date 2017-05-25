@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона | Форма отзыва</title>
+    <base href="https://htmlacademy-adaptive.github.io/306293-sedona/2/">
+</head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <img src="http://placehold.it/150x100" alt="logo">
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__btn" type="button"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a>Форма отзыва</a></li>
+          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-content">
+      <h1 class="page-content__title">Оставьте свой отзыв</h1>
+      <p class="page-content__promo-text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещеных Вами достопримечательностях</p>
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="form__name">
+          <legend>Представьтесь:</legend>
+          <label>
+            Имя:
+            <input type="text" name="first name">
+          </label>
+          <label>
+            Фамилия:
+            <input type="text" name="surname">
+          </label>
+          <label>
+            Отчество:
+            <input type="text" name="last name">
+          </label>
+        </fieldset>
+        <fieldset class="form__contact">
+          <legend>Контактная информация:</legend>
+          <label>
+            Контактный телефон:
+            <input type="tel" name="phone" placeholder="Введите телефон">
+          </label>
+          <label>
+            Электронная почта:
+            <input type="email" name="e-mail" placeholder="Введите e-mail">
+          </label>
+        </fieldset>
+        <fieldset class="form__impression">
+          <legend>Ваше общее впечатление</legend>
+          <label>
+            <input type="radio" name="impression" value="Скорее положительное" checked>
+            Скорее положительное
+          </label>
+          <label>
+            <input type="radio" name="impression" value="Скорее отрицательное">
+            Скорее отрицательное
+          </label>
+          <label>
+            <input type="radio" name="impression" value="Затрудняюсь ответить">
+            Затрудняюсь ответить
+          </label>
+        </fieldset>
+        <fieldset class="form__sights">
+          <legend>Посещенные достопримечательности:</legend>
+          <label>
+            <input type="checkbox" name="devil bridge" checked>
+            Мост дьявола
+          </label>
+          <label>
+            <input type="checkbox" name="slide park" checked>
+            Слайд-парк
+          </label>
+          <label>
+            <input type="checkbox" name="mountain bell">
+            Гора-колокол
+          </label>
+          <label>
+            <input type="checkbox" name="red rocks" checked>
+            Красные скалы
+          </label>
+        </fieldset>
+        <fieldset class="form__emotions">
+          <legend>Опишите свои эмоции:</legend>
+          <textarea placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <button class="form__submit-btn" type="submit">Отправить отзыв</button>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__hash" href="#">#visitSEDONA</a>
+      <aside class="social">
+        <ul class="social__list">
+          <li class="social__item  social__item--tw">
+            <a href="#">Twitter</a>
+          </li>
+          <li class="social__item  social__item--fb">
+            <a href="#">Facebook</a>
+          </li>
+          <li class="social__item  social__item--yout">
+            <a href="#">YouTube</a>
+          </li>
+        </ul>
+      </aside>
+      <span class="page-footer__copyrights">Разработано <a href="#">HTML Academy</a></span>
+    </footer>
+  </body>
+</html>
