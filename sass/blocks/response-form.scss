@@ -1,0 +1,111 @@
+.response-form {
+  @include wrapper;
+}
+
+.response-form__element {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #333;
+  }
+  input {
+    &[type="text"],
+    &[type="email"],
+    &[type="tel"] {
+      box-sizing: border-box;
+      height: 60px;
+      padding: 20px 25px;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: bold;
+      color: #000;
+      vertical-align: bottom;
+      background-color: #f2f2f2;
+      border: none;
+      outline: none;
+    }
+  }
+  textarea {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 160px;
+    margin-bottom: 50px;
+    padding: 20px 25px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+  }
+  &--name {
+    label {
+      display: flex;
+      input {
+        width: 100%;
+      }
+    }
+    .response-form__label {
+      padding-right: 10px;
+      line-height: 60px;
+    }
+  }
+  &--contact {
+    // label {
+    //   font-size: 0px;
+    // }
+    // input {
+    //   display: inline-block;
+    //   width: 78.57%;
+    // }
+    .response-form__label {
+      display: block;
+      margin-bottom: 10px;
+      padding-left: 20px;
+    }
+    .response-form__inner {
+      display: flex;
+      input {
+        width: 100%;
+      }
+    }
+    .response-form__icon {
+      flex-basis: 80px;
+      background-color: #e6e6e6;
+    }
+  }
+  &--impression,
+  &--sights {
+    label {
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: bold;
+      text-transform: none;
+      color: #000;
+    }
+  }
+}
+
+.response-form__title {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+}
+
+.response-form__submit-btn {
+  width: 100%;
+  margin-bottom: 75px;
+}

@@ -1,0 +1,59 @@
+.promo-block {
+  padding-top: 60px;
+  background-color: #81b3d2;
+  &--grey {
+    padding-top: 30px;
+    background-color: #eee;
+    border-bottom: 1px solid #d6d6d6;
+    &:last-child {
+      border-bottom: none;
+      // не работает, баг?
+    }
+    .promo-block__title,
+    .promo-block__number,
+    .promo-block__text {
+      color: #000;
+    }
+    .promo-block__text {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.promo-block__wrapper {
+  @include wrapper;
+}
+
+.promo-block__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+.promo-block__number {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 21px;
+  font-size: normal;
+  text-align: center;
+  color: #fff;
+}
+
+.promo-block__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 21px;
+  font-size: normal;
+  text-align: center;
+  color: #fff;
+}
+
+.promo-block__img {
+  width: 100%;
+}

@@ -1,0 +1,35 @@
+.features {
+  padding-top: 35px;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+
+.features__wrapper {
+  @include wrapper;
+}
+
+.features__list {
+  @include ul-reset;
+  padding-left: 50px;
+}
+
+.features__item {
+  margin-bottom: 30px;
+}
+
+.features__item-title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000;
+}
+
+.features__item-descr {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #333;
+}
