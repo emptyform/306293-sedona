@@ -1,0 +1,35 @@
+.page-footer {
+  text-align: center;
+}
+
+.page-footer__wrapper {
+  @include wrapper;
+}
+
+.page-footer__hash {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.page-footer__copyrights {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: #000;
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 34px;
+    margin-left: 10px;
+    font-size: 0;
+    background-image: url("../img/logo-htmlacademy.svg");
+  }
+}
