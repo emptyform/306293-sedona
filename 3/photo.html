@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>HTML Academy: Седона | Фото и видео</title>
+    <base href="https://htmlacademy-adaptive.github.io/306293-sedona/3/">
+</head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+          <a href="index.html"><img src="img/logo-sedona-mobile.svg" alt="logo"></a>
+        </div>
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть/закрыть меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item  main-nav__item--active"><a>Фото и видео</a></li>
+            <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru" target="_blank">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-header__sedona-text">Sedona</div>
+    </header>
+    <main class="page-content">
+      <div class="page-content__wrapper">
+        <h1 class="page-content__title">Фото и видео</h1>
+        <p class="page-content__text">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о политике и экономике</p>
+      </div>
+      <div class="gallery">
+        <div class="photo-item">
+          <img class="photo-item__img" src="img/photo-1-mobile@1x.jpg"  width="280px" height="280px" alt="Фото">
+          <blockquote class="photo-item__text">Неродные просторы</blockquote>
+          <cite class="photo-item__author">Автор фото: Борис</cite>
+          <span class="photo-item__likes">1350</span>
+        </div>
+        <div class="photo-item">
+          <img class="photo-item__img" src="img/photo-2-mobile@1x.jpg"  width="280px" height="280px" alt="Фото">
+          <blockquote class="photo-item__text">Местная растительность</blockquote>
+          <cite class="photo-item__author">Автор фото: Сергей</cite>
+          <span class="photo-item__likes">143</span>
+        </div>
+        <div class="photo-item">
+          <img class="photo-item__img" src="img/photo-3-mobile@1x.jpg"  width="280px" height="280px" alt="Фото">
+          <blockquote class="photo-item__text">Дорога на север</blockquote>
+          <cite class="photo-item__author">Автор фото: Петр</cite>
+          <span class="photo-item__likes">96</span>
+        </div>
+        <div class="photo-item">
+          <img class="photo-item__img" src="img/photo-4-mobile@1x.jpg"  width="280px" height="280px" alt="Фото">
+          <blockquote class="photo-item__text">Мост дьявола</blockquote>
+          <cite class="photo-item__author">Автор фото: Антон</cite>
+          <span class="photo-item__likes">254</span>
+        </div>
+      </div>
+      <div class="video">
+        <div class="video__wrapper">
+          <h2 class="video__title">Все еще сомневаетесь?</h2>
+          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <video class="video__video" controls poster="img/video-mobile@1x.jpg"></video>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__hash" href="#">#visitSEDONA</a>
+        <aside class="social">
+          <ul class="social__list">
+            <li class="social__item  social__item--tw  btn">
+              <a href="#">Twitter</a>
+            </li>
+            <li class="social__item  social__item--fb  btn">
+              <a href="#">Facebook</a>
+            </li>
+            <li class="social__item  social__item--yout  btn">
+              <a href="#">YouTube</a>
+            </li>
+          </ul>
+        </aside>
+        <span class="page-footer__copyrights">Разработано <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a></span>
+      </div>
+    </footer>
+    <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
+  </body>
+</html>
