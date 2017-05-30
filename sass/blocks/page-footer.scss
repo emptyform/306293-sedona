@@ -24,6 +24,12 @@
   font-weight: normal;
   color: #000;
   a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 34px;
+    margin-left: 10px;
     font-size: 0;
+    background-image: url("../img/logo-htmlacademy.svg");
   }
 }

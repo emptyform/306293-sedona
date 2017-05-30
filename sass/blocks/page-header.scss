@@ -2,16 +2,26 @@
 
 }
 
+.page-header__sedona-text {
+  padding-bottom: 160px;
+  font-size: 0px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &--index {
+    padding-bottom: 390px;
+  }
+}
+
 .page-header__wrapper {
   position: relative;
+  background-color: #fff;
 }
 
 .page-header__logo {
   position: absolute;
-  bottom: -27px;
+  bottom: -29px;
   left: 50%;
   margin-left: -50px;
-  img {
-
-  }
 }
