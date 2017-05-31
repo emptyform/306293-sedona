@@ -27,9 +27,18 @@
     display: inline-block;
     vertical-align: middle;
     width: 27px;
-    height: 34px;
+    height: 35px;
     margin-left: 10px;
     font-size: 0;
-    background-image: url("../img/logo-htmlacademy.svg");
+    &:hover {
+      svg {
+        fill: #81b3d2;
+      }
+    }
+    &:active {
+      svg {
+        fill: #b2b2b2;
+      }
+    }
   }
 }

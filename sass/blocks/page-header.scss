@@ -5,12 +5,16 @@
 .page-header__sedona-text {
   padding-bottom: 160px;
   font-size: 0px;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/text-sedona.svg"),
+                    url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 230px, cover;
   background-position: center;
   &--index {
     padding-bottom: 390px;
+    background-image: url("../img/text-sedona-index.svg"),
+                      url("../img/bg-back-mobile@1x.jpg");
+    background-size: 280px, cover;
   }
 }
 
