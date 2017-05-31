@@ -5,7 +5,7 @@ body {
   text-transform: uppercase;
   background-color: #fff;
   width: 320px;
-  border: 1px dashed green;
+  outline: 1px dashed green;
   margin: 0 auto; }
 
 img {
@@ -112,7 +112,17 @@ img {
     color: rgba(255, 255, 255, 0.3); }
 
 .page-content {
+  position: relative;
   padding-top: 45px; }
+  .page-content:before {
+    content: "";
+    position: absolute;
+    top: -26px;
+    left: 0;
+    width: 100%;
+    height: 26px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-size: 100%; }
 
 .page-content__wrapper {
   width: 280px;
@@ -279,7 +289,8 @@ img {
     color: rgba(255, 255, 255, 0.3); }
 
 .page-footer {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 25px; }
 
 .page-footer__wrapper {
   width: 280px;
@@ -296,7 +307,6 @@ img {
 
 .page-footer__copyrights {
   display: block;
-  margin-bottom: 25px;
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
@@ -389,7 +399,11 @@ img {
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
-  color: #000; }
+  color: #000;
+  background-image: url("../img/icon-like.svg");
+  background-repeat: no-repeat;
+  background-size: 23px;
+  background-position: top 0 left 0; }
 
 .video {
   margin-bottom: 75px;
@@ -465,6 +479,12 @@ img {
     background-color: #f2f2f2;
     border: none;
     outline: none; }
+    .response-form__element textarea:hover {
+      background-color: #e5e5e5; }
+    .response-form__element textarea:focus {
+      padding: 16px 21px;
+      background-color: #fff;
+      border: 4px solid #e5e5e5; }
   .response-form__element--name label {
     display: -ms-flexbox;
     display: flex; }

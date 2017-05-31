@@ -1,5 +1,16 @@
 .page-content {
+  position: relative;
   padding-top: 45px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -26px;
+    left: 0;
+    width: 100%;
+    height: 26px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-size: 100%;
+  }
 }
 
 .page-content__wrapper {
