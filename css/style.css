@@ -3,7 +3,10 @@ body {
   padding: 0;
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
-  background-color: #fff; }
+  background-color: #fff;
+  width: 320px;
+  border: 1px dashed green;
+  margin: 0 auto; }
 
 img {
   display: block;
@@ -443,6 +446,12 @@ img {
     background-color: #f2f2f2;
     border: none;
     outline: none; }
+    .response-form__element input[type="text"]:hover, .response-form__element input[type="email"]:hover, .response-form__element input[type="tel"]:hover {
+      background-color: #e5e5e5; }
+    .response-form__element input[type="text"]:focus, .response-form__element input[type="email"]:focus, .response-form__element input[type="tel"]:focus {
+      padding: 16px 21px;
+      background-color: #fff;
+      border: 4px solid #e5e5e5; }
   .response-form__element textarea {
     box-sizing: border-box;
     width: 100%;
@@ -476,7 +485,13 @@ img {
   .response-form__element--contact .response-form__icon {
     -ms-flex-preferred-size: 80px;
         flex-basis: 80px;
-    background-color: #e6e6e6; }
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .response-form__element--contact .response-form__icon--phone {
+      background-image: url("../img/icon-phone.svg"); }
+    .response-form__element--contact .response-form__icon--email {
+      background-image: url("../img/icon-mail.svg"); }
   .response-form__element--impression label, .response-form__element--sights label {
     font-size: 18px;
     line-height: 26px;
