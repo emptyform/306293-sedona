@@ -521,11 +521,56 @@ img {
     .response-form__element--contact .response-form__icon--email {
       background-image: url("../img/icon-mail.svg"); }
   .response-form__element--impression label, .response-form__element--sights label {
+    position: relative;
+    min-height: 56px;
+    margin-bottom: 15px;
+    padding-left: 80px;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 56px;
     font-weight: bold;
     text-transform: none;
     color: #000; }
+  .response-form__element--impression input {
+    display: none; }
+  .response-form__element--impression input + .response-form__indicator::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    background-color: #f2f2f2;
+    border-radius: 50%; }
+  .response-form__element--impression input:checked + .response-form__indicator::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    width: 22px;
+    height: 22px;
+    background-color: #333;
+    border-radius: 50%; }
+  .response-form__element--sights input {
+    display: none; }
+  .response-form__element--sights input + .response-form__indicator::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    background-color: #f2f2f2;
+    border-radius: 5px; }
+  .response-form__element--sights input:checked + .response-form__indicator::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 17px;
+    width: 15px;
+    height: 10px;
+    border-left: 3px solid #231f20;
+    border-bottom: 3px solid #231f20;
+    transform: rotate(-45deg); }
 
 .response-form__title {
   display: block;
