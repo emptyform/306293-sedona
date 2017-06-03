@@ -49,3 +49,64 @@
   font-weight: normal;
   color: #333;
 }
+
+@media #{$tablet-widths} {
+
+  .features {
+    padding: 0;
+  }
+
+  .features__wrapper {
+    width: auto;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    box-sizing: border-box;
+    flex-basis: 256px;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0 45px;
+    padding-top: 160px;
+    padding-bottom: 60px;
+    background-position: top 60px center;
+    &--house {
+      background-image: url("../img/icon-house.svg");
+      background-size: 75px;
+    }
+    &--gift {
+      order: 3;
+      background-image: url("../img/icon-gift.svg");
+      background-size: 64px;
+    }
+    &--burger {
+      background-image: url("../img/icon-burger.svg");
+      background-size: 77px;
+    }
+  }
+
+  .features__item-title {
+    margin-bottom: 25px;
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .features__item-descr {
+    text-align: center;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .features__item {
+    padding: 0 70px;
+    padding-top: 160px;
+    padding-bottom: 85px;
+  }
+
+}

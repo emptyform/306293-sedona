@@ -9,8 +9,9 @@
 .page-content__title {
   margin: 0;
   margin-bottom: 35px;
+  padding: 0 10px;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 21px;
   font-weight: bold;
   text-align: center;
   color: #000;
@@ -30,6 +31,28 @@
 
   .page-content {
     padding-top: 45px;
+  }
+
+  .page-content__title {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .page-content__text {
+    margin-bottom: 55px;
+  }
+
+  .page-content__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .page-content {
+    padding-top: 50px;
   }
 
 }

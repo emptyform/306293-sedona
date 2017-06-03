@@ -42,3 +42,23 @@
     }
   }
 }
+
+@media #{$tablet-widths} {
+
+  .page-footer {
+    padding-bottom: 35px;
+  }
+
+  .page-footer__wrapper {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .page-footer__hash {
+    margin: 0;
+  }
+
+}

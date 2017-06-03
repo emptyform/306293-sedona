@@ -28,3 +28,46 @@
 .search__btn {
   margin-bottom: 50px;
 }
+
+@media #{$tablet-widths} {
+
+  .search {
+    padding-top: 50px;
+  }
+
+  .search__wrapper {
+    box-sizing: border-box;
+    padding: 0 155px;
+  }
+
+  .search__title {
+    margin-bottom: 35px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .search__descr {
+    margin-bottom: 45px;
+  }
+
+  .search__btn {
+    margin-bottom: 60px;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .search__wrapper {
+    padding: 0 370px;
+  }
+
+  .search__descr {
+    margin-bottom: 50px;
+  }
+
+  .search__btn {
+    margin-bottom: 65px;
+  }
+
+}

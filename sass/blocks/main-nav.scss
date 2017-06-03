@@ -98,13 +98,13 @@
         }
       }
     }
-  }
-  &--nojs {
-    .main-nav__toggle {
-      display: none;
-    }
-    .main-nav__item {
-      display: block;
+    &--nojs {
+      .main-nav__toggle {
+        display: none;
+      }
+      .main-nav__item {
+        display: block;
+      }
     }
   }
 }
@@ -126,8 +126,6 @@
   .main-nav__item {
     min-width: 20%;
     max-height: 38px;
-    padding-top: 20px;
-    text-align: center;
     background-color: #fff;
     &:nth-child(n+6) {
       flex-grow: 1;
@@ -136,6 +134,7 @@
     &--active {
       a {
         color: #766357;
+        cursor: default;
         &:hover {
           color: #604e43;
         }
@@ -145,8 +144,7 @@
       }
     }
     a {
-      display: inline-block;
-      padding: 0;
+      padding: 20px 0;
       font-size: 14px;
       line-height: 17px;
       color: #000;
@@ -165,4 +163,17 @@
       }
     }
   }
+}
+
+@media #{$desktop-widths} {
+
+  .main-nav__item {
+    padding-top: 20px;
+    text-align: center;
+    a {
+      display: inline-block;
+      padding: 0;
+    }
+  }
+
 }
