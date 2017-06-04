@@ -16,5 +16,36 @@
     display: block;
     width: 46px;
     height: 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+    &:active {
+      opacity: 0.3;
+    }
   }
+  &--tw {
+    a {
+      background-image: url("../img/icon-twitter.svg");
+      background-size: 19px;
+    }
+  }
+  &--fb {
+    a {
+      background-image: url("../img/icon-facebook.svg");
+      background-size: 9px;
+    }
+  }
+  &--yout {
+    a {
+      background-image: url("../img/icon-youtube.svg");
+      background-size: 20px;
+    }
+  }
+}
+
+@media #{$tablet-widths} {
+
+  .social {
+    margin: 0;
+  }
+
 }

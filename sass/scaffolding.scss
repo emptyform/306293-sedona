@@ -4,12 +4,20 @@ body {
   font-family: $main-font;
   text-transform: uppercase;
   background-color: #fff;
-
-  width: 320px;
-  border: 1px dashed green;
-  margin: 0 auto;
+  color: #000;
 }
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media #{$desktop-widths} {
+
+  body {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
 }
