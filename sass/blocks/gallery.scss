@@ -1,3 +1,12 @@
 .gallery {
   @include wrapper;
 }
+
+@media #{$tablet-widths} {
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}

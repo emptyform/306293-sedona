@@ -23,6 +23,7 @@
 
 .page-header__sedona-text {
   margin-top: -26px;
+  margin-bottom: 40px;
   padding-bottom: 160px;
   font-size: 0px;
   background-image: url("../img/text-sedona.svg"),
@@ -45,9 +46,24 @@
   }
 
   .page-header__sedona-text {
+    margin-bottom: 70px;
+    padding-bottom: 290px;
+    background-size: 460px, cover;
     &--index {
-      padding-bottom: 520px;
-      background-size: 460px, cover;
+      margin-bottom: 45px;
+      padding-bottom: 520px !important; // чтобы не переопределялось каскадом для десктопа
     }
   }
+}
+
+@media #{$desktop-widths} {
+
+  .page-header__sedona-text {
+    margin-bottom: 110px;
+    padding-bottom: 300px;
+    &--index {
+      margin-bottom: 50px;
+    }
+  }
+
 }
