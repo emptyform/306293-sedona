@@ -23,6 +23,9 @@
   line-height: 24px;
   font-weight: normal;
   color: #333;
+  br {
+    display: none;
+  }
 }
 
 .search__btn {
@@ -37,7 +40,7 @@
 
   .search__wrapper {
     box-sizing: border-box;
-    padding: 0 155px;
+    padding: 0 95px;
   }
 
   .search__title {
@@ -48,6 +51,9 @@
 
   .search__descr {
     margin-bottom: 45px;
+    br {
+      display: block;
+    }
   }
 
   .search__btn {

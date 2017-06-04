@@ -25,7 +25,7 @@
     <main class="page-content">
       <div class="page-content__wrapper">
         <h1 class="page-content__title">Оставьте свой отзыв</h1>
-        <p class="page-content__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещеных Вами достопримечательностях</p>
+        <p class="page-content__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, <br>а также о посещеных Вами достопримечательностях</p>
       </div>
       <div class="response-form">
         <form action="https://echo.htmlacademy.ru/" method="post">
@@ -33,11 +33,11 @@
             <b class="response-form__title">Представьтесь:</b>
             <label>
               <span class="response-form__label">Имя*:</span>
-              <input type="text" name="first name" placeholder="Петр">
+              <input type="text" name="first name" placeholder="Петр" required>
             </label>
             <label>
               <span class="response-form__label">Фамилия*:</span>
-              <input type="text" name="surname" placeholder="Иванов">
+              <input type="text" name="surname" placeholder="Иванов" required>
             </label>
             <label>
               <span class="response-form__label">Отчество:</span>
@@ -46,20 +46,22 @@
           </fieldset>
           <fieldset class="response-form__element  response-form__element--contact">
             <b class="response-form__title">Контактная информация:</b>
-            <label>
-              <span class="response-form__label">Контактный телефон*:</span>
-              <div class="response-form__inner">
-                <input type="tel" name="phone" placeholder="Введите телефон">
-                <span class="response-form__icon  response-form__icon--phone"></span>
-              </div>
-            </label>
-            <label>
-              <span class="response-form__label">Электронная почта*:</span>
-              <div class="response-form__inner">
-                <input type="email" name="e-mail" placeholder="Введите e-mail">
-                <span class="response-form__icon  response-form__icon--email"></span>
-              </div>
-            </label>
+            <div class="response-form__inner">
+              <label>
+                <span class="response-form__label"><span class="response-form__word-hidden">Контактный</span> телефон*:</span>
+                <div class="response-form__input-inner">
+                  <input type="tel" name="phone" placeholder="Введите телефон" required>
+                  <span class="response-form__icon  response-form__icon--phone"></span>
+                </div>
+              </label>
+              <label>
+                <span class="response-form__label">Электронная почта*:</span>
+                <div class="response-form__input-inner">
+                  <input type="email" name="e-mail" placeholder="Введите e-mail" required>
+                  <span class="response-form__icon  response-form__icon--email"></span>
+                </div>
+              </label>
+            </div>
           </fieldset>
           <fieldset class="response-form__element  response-form__element--impression">
             <b class="response-form__title">Ваше общее впечатление:</b>
@@ -80,33 +82,36 @@
             </label>
           </fieldset>
           <fieldset class="response-form__element  response-form__element--sights">
-            <b class="response-form__title">Посещенные достопримечательности:</b>
-            <label>
-              <input type="checkbox" name="devil bridge" checked>
-              <span class="response-form__indicator"></span>
-              Мост дьявола
-            </label>
-            <label>
-              <input type="checkbox" name="slide park" checked>
-              <span class="response-form__indicator"></span>
-              Слайд-парк
-            </label>
-            <label>
-              <input type="checkbox" name="mountain bell">
-              <span class="response-form__indicator"></span>
-              Гора-колокол
-            </label>
-            <label>
-              <input type="checkbox" name="red rocks" checked>
-              <span class="response-form__indicator"></span>
-              Красные скалы
-            </label>
+            <b class="response-form__title">Посещенные <br>достопримечательности:</b>
+            <div class="response-form__inner">
+              <label>
+                <input type="checkbox" name="devil bridge" checked>
+                <span class="response-form__indicator"></span>
+                Мост дьявола
+              </label>
+              <label>
+                <input type="checkbox" name="slide park" checked>
+                <span class="response-form__indicator"></span>
+                Слайд-парк
+              </label>
+              <label>
+                <input type="checkbox" name="mountain bell">
+                <span class="response-form__indicator"></span>
+                Гора-колокол
+              </label>
+              <label>
+                <input type="checkbox" name="red rocks" checked>
+                <span class="response-form__indicator"></span>
+                Красные скалы
+              </label>
+            </div>
           </fieldset>
           <fieldset class="response-form__element  response-form__element--emotions">
             <b class="response-form__title">Опишите свои эмоции:</b>
             <textarea placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="response-form__submit-btn  btn" type="submit">Отправить отзыв</button>
+          <span class="response-form__required">* - обязательные поля</span>
         </form>
       </div>
     </main>

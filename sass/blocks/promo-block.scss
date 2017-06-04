@@ -21,9 +21,8 @@
     padding: 30px 0;
     background-color: #eee;
     border-bottom: 1px solid #d6d6d6;
-    &:last-child {
+    &:last-of-type {
       border-bottom: none;
-      // не работает, баг?
     }
     .promo-block__title,
     .promo-block__number,
