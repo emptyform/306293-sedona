@@ -27,15 +27,17 @@
   padding-bottom: 160px;
   font-size: 0px;
   background-image: url("../img/text-sedona.svg"),
+                    url("../img/bg-intro-triangle-mobile.svg"),
                     url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 230px, cover;
-  background-position: center;
+  background-size: 230px, 100%, cover;
+  background-position: center, bottom, center;
   &--index {
     padding-bottom: 390px;
     background-image: url("../img/text-sedona-index.svg"),
+                      url("../img/bg-intro-triangle-mobile.svg"),
                       url("../img/bg-back-mobile@1x.jpg");
-    background-size: 280px, cover;
+    background-size: 280px, 100%, cover;
   }
 }
 
@@ -48,7 +50,7 @@
   .page-header__sedona-text {
     margin-bottom: 70px;
     padding-bottom: 290px;
-    background-size: 460px, cover;
+    background-size: 460px, 100%, cover;
     &--index {
       margin-bottom: 45px;
       padding-bottom: 520px !important; // чтобы не переопределялось каскадом для десктопа
