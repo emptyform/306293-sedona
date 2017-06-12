@@ -1,21 +1,22 @@
 .social {
+  display: inline-block;
   margin-bottom: 40px;
 }
 
 .social__list {
   @include ul-reset;
-  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  min-width: 155px;
 }
 
 .social__item {
-  margin-right: 6px;
   padding: 0;
-  display: inline-block;
-  font-size: 0;
   a {
     display: block;
     width: 46px;
     height: 48px;
+    font-size: 0;
     background-repeat: no-repeat;
     background-position: center;
     &:active {
@@ -45,7 +46,7 @@
 @media #{$tablet-widths} {
 
   .social {
-    margin: 0;
+    margin-bottom: 0;
   }
 
 }

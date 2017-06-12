@@ -11,7 +11,9 @@
 }
 
 .photo-item__img {
-  width: 100%;
+  img {
+    width: 100%;
+  }
 }
 
 .photo-item__text {
@@ -71,7 +73,9 @@
   }
 
   .photo-item__img {
-    max-height: 400px;
+    img {
+      max-height: 400px;
+    }
   }
 
   .photo-item__author {
@@ -101,7 +105,9 @@
   }
 
   .photo-item__img {
-    margin-bottom: 0;
+    img {
+      margin-bottom: 0;
+    }
   }
 
   .photo-item__text {
