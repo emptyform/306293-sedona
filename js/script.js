@@ -34,8 +34,8 @@
       } else {
         failurePopup.classList.remove('failure-popup--opened');
         failurePopup.classList.add('failure-popup--closed');
+        requiredFields[invalidFieldFirst].focus();
       }
-      requiredFields[invalidFieldFirst].focus();
       valid = true;
     });
 

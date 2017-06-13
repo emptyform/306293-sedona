@@ -14,7 +14,13 @@
           <li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
           <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
           <li class="page-header__logo">
-            <a href="index.html"><img src="img/logo-sedona-mobile.svg" alt="logo"></a>
+            <a>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="logo">
+              </picture>
+            </a>
           </li>
           <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
           <li class="main-nav__item"><a href="https://htmlacademy.ru" target="_blank">HTML Academy</a></li>
@@ -33,7 +39,13 @@
           <span class="promo-block__number">- №1 -</span>
           <p class="promo-block__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <img class="promo-block__img" src="img/photo-city-mobile@1x.jpg" alt="Седона">
+        <div class="promo-block__img-wrapper">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-city@1x.jpg 1x, img/photo-city@2x.jpg 2x">
+            <source media="(min-width: 768px" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+            <img class="promo-block__img" src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="Седона">
+          </picture>
+        </div>
         <div class="features">
           <div class="features__wrapper">
             <ul class="features__list">

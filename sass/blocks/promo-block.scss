@@ -68,9 +68,12 @@
   color: #fff;
 }
 
+.promo-block__img-wrapper {
+  text-align: center;
+}
+
 .promo-block__img {
-  display: block;
-  width: 100%;
+  vertical-align: bottom;
 }
 
 @media #{$tablet-widths} {
