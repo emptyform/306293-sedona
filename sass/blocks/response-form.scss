@@ -216,14 +216,19 @@
   color: #000;
 }
 
+.response-form__required {
+  &--show {
+    background-color: rgba(red, 0.15) !important; // js-класс, нужно перебить спецефичность
+  }
+}
+
 .response-form__submit-btn {
   width: 100%;
 }
 
-.response-form__required {
+.response-form__fields-required {
   display: none;
 }
-
 
 @media #{$tablet-widths} {
 
@@ -293,7 +298,7 @@
     width: 325px;
   }
 
-  .response-form__required {
+  .response-form__fields-required {
     display: block;
     width: 200px;
     margin-left: auto;

@@ -32,11 +32,11 @@
           <b class="response-form__title">Представьтесь:</b>
           <label>
             <span class="response-form__label">Имя*:</span>
-            <input type="text" name="first name" placeholder="Петр" required>
+            <input class="response-form__required" type="text" name="first name" placeholder="Петр">
           </label>
           <label>
             <span class="response-form__label">Фамилия*:</span>
-            <input type="text" name="surname" placeholder="Иванов" required>
+            <input class="response-form__required" type="text" name="surname" placeholder="Иванов">
           </label>
           <label>
             <span class="response-form__label">Отчество:</span>
@@ -49,14 +49,14 @@
             <label>
               <span class="response-form__label"><span class="response-form__word-hidden">Контактный</span> телефон*:</span>
               <div class="response-form__input-inner">
-                <input type="tel" name="phone" placeholder="Введите телефон" required>
+                <input class="response-form__required" type="tel" name="phone" placeholder="Введите телефон">
                 <span class="response-form__icon  response-form__icon--phone"></span>
               </div>
             </label>
             <label>
               <span class="response-form__label">Электронная почта*:</span>
               <div class="response-form__input-inner">
-                <input type="email" name="e-mail" placeholder="Введите e-mail" required>
+                <input class="response-form__required" type="email" name="e-mail" placeholder="Введите e-mail">
                 <span class="response-form__icon  response-form__icon--email"></span>
               </div>
             </label>
@@ -110,7 +110,7 @@
           <textarea name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="response-form__submit-btn  btn" type="submit">Отправить отзыв</button>
-        <span class="response-form__required">* - обязательные поля</span>
+        <span class="response-form__fields-required">* - обязательные поля</span>
       </form>
     </main>
     <footer class="page-footer">
@@ -136,15 +136,17 @@
         </span>
       </div>
     </footer>
+    <article class="success-popup  success-popup--closed">
+      <h1 class="success-popup__title">Ваш отзыв отправлен!</h1>
+      <p class="success-popup__text">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте</p>
+      <div class="success-popup__inner">
+        <button class="success-popup__close-btn  btn">Закрыть окно</button>
+      </div>
+    </article>
     <article class="failure-popup  failure-popup--closed">
       <h1 class="failure-popup__title">Что-то пошло не так!</h1>
       <p class="failure-popup__text">Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить</p>
       <button class="failure-popup__close-btn  btn">Ок</button>
-    </article>
-    <article class="success-popup  success-popup--closed">
-      <h1 class="success-popup__title">Ваш отзыв отправлен!</h1>
-      <p class="success-popup__text">Спасибо за участие, Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте</p>
-      <button class="success-popup__close-btn  btn">Закрыть окно</button>
     </article>
     <script src="js/script.js"></script>
   </body>
