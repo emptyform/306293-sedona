@@ -7,7 +7,6 @@ body {
   color: #000; }
 
 img {
-  display: block;
   max-width: 100%;
   height: auto; }
 
@@ -301,6 +300,7 @@ img {
   color: #fff; }
 
 .promo-block__img {
+  display: block;
   width: 100%; }
 
 @media (min-width: 768px) {
@@ -316,8 +316,8 @@ img {
           flex-direction: row-reverse; }
     .promo-block--grey {
       box-sizing: border-box;
-      -ms-flex-preferred-size: 256px;
-          flex-basis: 256px;
+      -ms-flex-preferred-size: 250px;
+          flex-basis: 250px;
       -ms-flex-positive: 1;
           flex-grow: 1;
       padding: 0;
@@ -335,8 +335,8 @@ img {
           display: block; }
   .promo-block__wrapper {
     box-sizing: border-box;
-    -ms-flex-preferred-size: 256px;
-        flex-basis: 256px;
+    -ms-flex-preferred-size: 250px;
+        flex-basis: 250px;
     -ms-flex-positive: 1;
         flex-grow: 1;
     padding: 45px; }
@@ -422,8 +422,8 @@ img {
         flex-wrap: wrap; }
   .features__item {
     box-sizing: border-box;
-    -ms-flex-preferred-size: 256px;
-        flex-basis: 256px;
+    -ms-flex-preferred-size: 250px;
+        flex-basis: 250px;
     -ms-flex-positive: 1;
         flex-grow: 1;
     margin: 0;
@@ -653,15 +653,22 @@ img {
 
 .photo-item {
   margin: 0;
-  border-bottom: 1px solid #e5e5e5; }
-  .photo-item:first-child {
-    border-top: 1px solid #e5e5e5; }
+  padding-top: 25px; }
+  .photo-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5; }
 
 .photo-item__wrapper {
   padding: 15px 0; }
 
-.photo-item__img img {
-  width: 100%; }
+.photo-item__img {
+  display: block; }
+  .photo-item__img img {
+    display: block;
+    width: 100%; }
 
 .photo-item__text {
   margin: 0;
@@ -697,10 +704,9 @@ img {
   .photo-item {
     width: 50%;
     padding-top: 0;
-    background-color: #f2f2f2;
-    border: none; }
-    .photo-item:first-child {
-      border: none; }
+    background-color: #f2f2f2; }
+    .photo-item::after {
+      display: none; }
     .photo-item--lg {
       width: 100%; }
   .photo-item__wrapper {

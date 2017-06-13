@@ -1,9 +1,20 @@
 .photo-item {
   margin: 0;
-  border-bottom: 1px solid #e5e5e5;
-  &:first-child {
-    border-top: 1px solid #e5e5e5;
+  padding-top: 25px;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
   }
+  // &:first-child::before {
+  //   content: "";
+  //   position: absolute;
+  //   left: 0;
+  //   width: 100%;
+  //   border-top: 1px solid #e5e5e5;
+  // }
 }
 
 .photo-item__wrapper {
@@ -11,7 +22,9 @@
 }
 
 .photo-item__img {
+  display: block;
   img {
+    display: block;
     width: 100%;
   }
 }
@@ -56,10 +69,12 @@
     width: 50%;
     padding-top: 0;
     background-color: #f2f2f2;
-    border: none;
-    &:first-child {
-      border: none;
+    &::after {
+      display: none;
     }
+    // &:first-child::before {
+    //   display: none;
+    // }
     &--lg {
       width: 100%;
     }
