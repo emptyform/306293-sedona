@@ -1,16 +1,25 @@
 .photo-item {
-  border-bottom: 1px solid #e5e5e5;
-  &:first-child {
-    border-top: 1px solid #e5e5e5;
+  margin: 0;
+  padding-top: 25px;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
   }
 }
 
-.photo-item__inner {
+.photo-item__wrapper {
   padding: 15px 0;
 }
 
 .photo-item__img {
-  width: 100%;
+  display: block;
+  img {
+    display: block;
+    width: 100%;
+  }
 }
 
 .photo-item__text {
@@ -34,50 +43,48 @@
 }
 
 .photo-item__likes {
-  display: block;
-  padding-left: 35px;
+  display: flex;
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.photo-item__likes-amount {
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
   color: #000;
-  background-image: url("../img/icon-like.svg");
-  background-repeat: no-repeat;
-  background-size: 23px;
-  background-position: top 0 left 0;
 }
 
 @media #{$tablet-widths} {
 
   .photo-item {
-    position: relative;
     width: 50%;
     padding-top: 0;
     background-color: #f2f2f2;
-    border: none;
-    &:first-child {
-      border: none;
+    &::after {
+      display: none;
     }
     &--lg {
       width: 100%;
     }
   }
 
-  .photo-item__inner {
+  .photo-item__wrapper {
     padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .photo-item__img {
-    max-height: 400px;
+    img {
+      max-height: 400px;
+    }
   }
 
   .photo-item__author {
     margin-bottom: 0;
-  }
-
-  .photo-item__likes {
-    position: absolute;
-    right: 20px;
-    bottom: 30px;
   }
 
 }
@@ -85,6 +92,7 @@
 @media #{$desktop-widths} {
 
   .photo-item {
+    position: relative;
     box-sizing: border-box;
     width: 33.33%;
     padding-bottom: 0;
@@ -93,7 +101,7 @@
     }
   }
 
-  .photo-item__inner {
+  .photo-item__wrapper {
     position: absolute;
     bottom: 0;
     box-sizing: border-box;
@@ -102,7 +110,9 @@
   }
 
   .photo-item__img {
-    margin-bottom: 0;
+    img {
+      margin-bottom: 0;
+    }
   }
 
   .photo-item__text {
@@ -115,8 +125,14 @@
   }
 
   .photo-item__likes {
-    right: 20px;
-    bottom: 30px;
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
+  .photo-item__likes-amount {
     color: #fff;
   }
 

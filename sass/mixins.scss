@@ -36,7 +36,8 @@
 
 @mixin title-line {
   position: relative;
-  padding: 0 125px;
+  padding-right: 125px;
+  padding-left: 125px;
   &::before {
     content: "";
     position: absolute;

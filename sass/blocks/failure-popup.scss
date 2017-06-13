@@ -2,8 +2,7 @@
   position: fixed;
   top: 25%;
   box-sizing: border-box;
-  width: inherit;
-  padding: 0 30px;
+  width: 100%;
   padding-top: 40px;
   padding-bottom: 35px;
   background-color: #fff;
@@ -19,6 +18,7 @@
 .failure-popup__title {
   margin: 0;
   margin-bottom: 30px;
+  padding: 0 11%;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -29,6 +29,7 @@
 .failure-popup__text {
   margin: 0;
   margin-bottom: 25px;
+  padding: 0 11%;
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
@@ -38,6 +39,33 @@
 
 .failure-popup__close-btn {
   width: 56%;
+  max-width: 400px;
   margin: 0 auto;
   font-size: 18px;
+}
+
+@media #{$tablet-widths} {
+
+  .failure-popup {
+    left: 50%;
+    width: 400px;
+    padding-top: 65px;
+    padding-bottom: 50px;
+    transform: translateX(-50%);
+  }
+
+  .failure-popup__title {
+    padding: 0 15%;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .failure-popup__text {
+    padding: 0 15%;
+  }
+
+  .failure-popup__close-btn {
+    font-size: 21px
+  }
+
 }
