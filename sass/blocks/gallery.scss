@@ -14,9 +14,8 @@
   .gallery {
     display: flex;
     flex-wrap: wrap;
+    &::before {
+      display: none;
+    }
   }
-  &::before {
-    display: none;
-  }
-
 }

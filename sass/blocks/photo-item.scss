@@ -14,7 +14,7 @@
   padding: 15px 0;
 }
 
-.photo-item__img {
+.photo-item__img-wrapper {
   display: block;
   img {
     display: block;
@@ -77,7 +77,7 @@
     align-items: center;
   }
 
-  .photo-item__img {
+  .photo-item__img-wrapper {
     img {
       max-height: 400px;
     }
@@ -109,7 +109,7 @@
     background-color: rgba(#000, 0.3);
   }
 
-  .photo-item__img {
+  .photo-item__img-wrapper {
     img {
       margin-bottom: 0;
     }
