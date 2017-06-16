@@ -1,7 +1,19 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff") format("woff"), url("../fonts/ptsansbold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal; }
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   text-transform: uppercase;
   background-color: #fff;
   color: #000; }
@@ -22,7 +34,7 @@ img {
   .page-header--index .page-header__sedona-text {
     padding-bottom: 390px;
     background-image: url("../img/text-sedona-index.svg"), url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
-    background-size: 280px, 100%, cover; }
+    background-size: 280px, 100% 26px, cover; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .page-header--index .page-header__sedona-text {
         background-image: url("../img/text-sedona-index.svg"), url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg"); } }
@@ -36,7 +48,8 @@ img {
   background-color: transparent; }
   .page-header__logo img {
     width: 102px;
-    height: 83px; }
+    height: 83px;
+    vertical-align: bottom; }
 
 .page-header__sedona-text {
   margin-top: -26px;
@@ -190,7 +203,7 @@ img {
     background-color: #fff; }
   .main-nav__item {
     min-width: 20%;
-    max-height: 38px;
+    max-height: 57px;
     background-color: #fff; }
     .main-nav__item:nth-child(n+6) {
       -ms-flex-positive: 1;
@@ -220,10 +233,10 @@ img {
 
 @media (min-width: 1200px) {
   .main-nav__item {
-    padding-top: 20px;
-    text-align: center; }
+    display: -ms-flexbox;
+    display: flex; }
     .main-nav__item a {
-      display: inline-block;
+      margin: auto;
       padding: 0; } }
 
 .page-content__wrapper {
@@ -241,14 +254,14 @@ img {
   margin-bottom: 35px;
   padding: 0 10px;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 26px;
   font-weight: bold;
   text-align: center;
   color: #000; }
 
 .page-content__text {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
@@ -279,6 +292,13 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; } }
+
+.promo-block--triangle .promo-block__wrapper {
+  padding-top: 77px;
+  background-image: url("../img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 37px; }
 
 .promo-block--grey {
   border-bottom: 1px solid #d6d6d6; }
@@ -1190,13 +1210,24 @@ img {
     padding: 0;
     border: 0; }
     .response-form__element--name {
-      width: 45%; }
+      position: relative;
+      box-sizing: border-box;
+      width: 50%;
+      padding-left: 55px; }
+      .response-form__element--name::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        border-left: 1px solid #dbdbdb; }
       .response-form__element--name .response-form__title {
         text-align: left; }
     .response-form__element--impression {
       -ms-flex-order: -1;
           order: -1;
-      width: 55%; }
+      width: 50%; }
       .response-form__element--impression label {
         margin-bottom: 25px; }
       .response-form__element--impression .response-form__title {
@@ -1319,6 +1350,8 @@ img {
   .response-form {
     box-sizing: border-box;
     padding: 0 120px; }
+  .response-form__element--name {
+    padding-left: 80px; }
   .response-form__element--impression .response-form__title {
     padding-left: 80px; }
   .response-form__element--contact .response-form__title {
