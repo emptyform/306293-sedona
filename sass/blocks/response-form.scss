@@ -31,6 +31,18 @@
       background-color: #f2f2f2;
       border: none;
       outline: none;
+      &::-webkit-input-placeholder {
+        color: #000;
+      }
+      &::-moz-placeholder {
+        color: #000;
+      }
+      &:-moz-placeholder {
+        color: #000;
+      }
+      &:-ms-input-placeholder {
+        color: #000;
+      }
       &:hover {
         background-color: #e5e5e5;
       }
@@ -194,6 +206,18 @@
       background-color: #f2f2f2;
       border: none;
       outline: none;
+      &::-webkit-input-placeholder {
+        color: #000;
+      }
+      &::-moz-placeholder {
+        color: #000;
+      }
+      &:-moz-placeholder {
+        color: #000;
+      }
+      &:-ms-input-placeholder {
+        color: #000;
+      }
       &:hover {
           background-color: #e5e5e5;
         }
