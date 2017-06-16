@@ -125,7 +125,7 @@
 
   .main-nav__item {
     min-width: 20%;
-    max-height: 38px;
+    max-height: 57px;
     background-color: #fff;
     &:nth-child(n+6) {
       flex-grow: 1;
@@ -168,10 +168,9 @@
 @media #{$desktop-widths} {
 
   .main-nav__item {
-    padding-top: 20px;
-    text-align: center;
+    display: flex;
     a {
-      display: inline-block;
+      margin: auto;
       padding: 0;
     }
   }

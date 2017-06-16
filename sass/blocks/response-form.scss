@@ -243,14 +243,26 @@
     padding: 0;
     border: 0;
     &--name {
-      width: 45%;
+      position: relative;
+      box-sizing: border-box;
+      width: 50%;
+      padding-left: 55px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        border-left: 1px solid #dbdbdb;
+      }
       .response-form__title {
         text-align: left;
       }
     }
     &--impression {
       order: -1;
-      width: 55%;
+      width: 50%;
       label {
         margin-bottom: 25px;
       }
@@ -320,6 +332,9 @@
   }
 
   .response-form__element {
+    &--name {
+      padding-left: 80px;
+    }
     &--impression {
       .response-form__title {
         padding-left: 80px;

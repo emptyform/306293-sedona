@@ -1,13 +1,13 @@
 .promo-block {
-  // &--triangle {
-  //   .promo-block__wrapper {
-  //     padding-top: 77px;
-  //     background-image: url("../img/bg-triangle.svg");
-  //     background-repeat: no-repeat;
-  //     background-position: top;
-  //     background-size: 100%, 37px;
-  //   }
-  // }
+  &--triangle {
+    .promo-block__wrapper {
+      padding-top: 77px;
+      background-image: url("../img/bg-triangle.svg");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 100% 37px;
+    }
+  }
   &--grey {
     border-bottom: 1px solid #d6d6d6;
     &:last-of-type {
