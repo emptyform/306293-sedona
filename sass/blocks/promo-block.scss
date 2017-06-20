@@ -114,12 +114,12 @@
     display: flex;
     box-sizing: border-box;
     flex-grow: 1;
+    flex-basis: 230px;
     padding: 0;
   }
 
   .promo-block__inner {
-    width: 170px;
-    // width: 66%;
+    width: 66%;
     margin: auto;
   }
 
@@ -164,6 +164,7 @@
 
   .promo-block__wrapper {
     flex-grow: 0;
+    flex-basis: auto;
     width: 33%;
   }
 
