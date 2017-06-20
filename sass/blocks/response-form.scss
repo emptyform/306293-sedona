@@ -31,6 +31,18 @@
       background-color: #f2f2f2;
       border: none;
       outline: none;
+      &::-webkit-input-placeholder {
+        color: #000;
+      }
+      &::-moz-placeholder {
+        color: #000;
+      }
+      &:-moz-placeholder {
+        color: #000;
+      }
+      &:-ms-input-placeholder {
+        color: #000;
+      }
       &:hover {
         background-color: #e5e5e5;
       }
@@ -153,7 +165,6 @@
     }
     .response-form__label {
       padding: 0 22px;
-      // padding-left: 22px;
       font-size: 18px;
       line-height: 22px;
       font-weight: bold;
@@ -194,6 +205,18 @@
       background-color: #f2f2f2;
       border: none;
       outline: none;
+      &::-webkit-input-placeholder {
+        color: #000;
+      }
+      &::-moz-placeholder {
+        color: #000;
+      }
+      &:-moz-placeholder {
+        color: #000;
+      }
+      &:-ms-input-placeholder {
+        color: #000;
+      }
       &:hover {
           background-color: #e5e5e5;
         }
