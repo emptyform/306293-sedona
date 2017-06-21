@@ -45,6 +45,7 @@
 .photo-item__likes {
   display: flex;
   svg {
+    fill: #b2b2b2;
     margin-right: 10px;
   }
 }
@@ -126,9 +127,7 @@
 
   .photo-item__likes {
     svg {
-      path {
-        fill: #fff;
-      }
+      fill: #fff;
     }
   }
 

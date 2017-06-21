@@ -101,16 +101,12 @@
   }
   &:hover {
     svg {
-      * {
-        fill: #333;
-      }
+      fill: #333;
     }
   }
   &:active {
     svg {
-      * {
-        fill: rgba(#333, 0.3);
-      }
+      fill: rgba(#333, 0.3);
     }
   }
 }
@@ -169,9 +165,7 @@
       order: 4;
     }
     svg {
-      * {
-        fill: #fff;
-      }
+      fill: #fff;
     }
   }
 
