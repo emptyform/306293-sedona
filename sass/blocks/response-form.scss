@@ -76,6 +76,11 @@
         width: 100px;
         flex-grow: 1;
       }
+      .response-form__required {
+        &--invalid {
+          background-color: rgba(red, 0.15);
+        }
+      }
     }
     .response-form__label {
       padding-right: 15px;
@@ -87,6 +92,11 @@
       margin-bottom: 11px;
       &:last-of-type {
         margin-bottom: 27px;
+      }
+    .response-form__required {
+        &--invalid {
+          background-color: rgba(red, 0.15);
+        }
       }
     }
     .response-form__label {
@@ -264,12 +274,6 @@
   font-weight: bold;
   text-align: center;
   color: #000;
-}
-
-.response-form__required {
-  &--invalid {
-    background-color: rgba(red, 0.15) !important; // js-класс, нужно перебить специфичность
-  }
 }
 
 .response-form__submit-btn {
