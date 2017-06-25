@@ -8,6 +8,11 @@
       background-size: 100% 37px;
     }
   }
+  &--inverse {
+    br {
+      display: none;
+    }
+  }
   &--grey {
     border-bottom: 1px solid #d6d6d6;
     &:last-of-type {
@@ -27,14 +32,14 @@
       margin: 0;
     }
     .promo-block__wrapper {
-      padding: 30px 9%;
+      padding: 26px 11%;
       background-color: #eee;
     }
   }
 }
 
 .promo-block__wrapper {
-  padding: 40px 9%;
+  padding: 40px 7%;
   background-color: #81b3d2;
 }
 
@@ -107,6 +112,9 @@
           display: block;
         }
       }
+      .promo-block__number {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -154,10 +162,20 @@
 @media #{$desktop-widths} {
 
   .promo-block {
+    &--inverse {
+      br {
+        display: block;
+      }
+    }
     &--grey {
       .promo-block__wrapper {
         flex-grow: 1;
-        padding: 55px 0;
+        padding: 0;
+        padding-top: 40px;
+        padding-bottom: 66px;
+      }
+      .promo-block__title {
+        margin-bottom: 9px;
       }
     }
   }

@@ -1,6 +1,13 @@
 .response-form {
   @include wrapper;
   margin-bottom: 75px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+  }
 }
 
 .response-form__element {
@@ -8,7 +15,16 @@
   padding: 0;
   padding-top: 20px;
   border: none;
-  border-top: 1px solid #e5e5e5;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  &:last-of-type::after {
+    border-bottom: none;
+  }
   label {
     display: block;
     margin-bottom: 20px;
@@ -60,16 +76,32 @@
         width: 100px;
         flex-grow: 1;
       }
+      .response-form__required {
+        &--invalid {
+          background-color: rgba(red, 0.15);
+        }
+      }
     }
     .response-form__label {
-      padding-right: 10px;
+      padding-right: 15px;
       line-height: 60px;
     }
   }
   &--contact {
+    label {
+      margin-bottom: 11px;
+      &:last-of-type {
+        margin-bottom: 27px;
+      }
+    .response-form__required {
+        &--invalid {
+          background-color: rgba(red, 0.15);
+        }
+      }
+    }
     .response-form__label {
       display: block;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
       padding-left: 20px;
     }
     .response-form__input-inner {
@@ -93,6 +125,11 @@
     }
   }
   &--impression {
+    label {
+      &:last-of-type {
+        margin-bottom: 25px;
+      }
+    }
     input {
       display: none;
     }
@@ -175,7 +212,7 @@
       display: flex;
       align-items: center;
       min-height: 56px;
-      margin-bottom: 15px;
+      margin-bottom: 23px;
       &:hover {
         .response-form__indicator {
           background-color: #e5e5e5;
@@ -192,7 +229,7 @@
     }
   }
   &--emotions {
-    margin-bottom: 50px;
+    margin-bottom: 47px;
     textarea {
       box-sizing: border-box;
       width: 100%;
@@ -231,18 +268,12 @@
 
 .response-form__title {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 19px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   text-align: center;
   color: #000;
-}
-
-.response-form__required {
-  &--show {
-    background-color: rgba(red, 0.15) !important; // js-класс, нужно перебить спецефичность
-  }
 }
 
 .response-form__submit-btn {
@@ -258,13 +289,20 @@
   .response-form {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 97px;
+    &::before {
+      display: none;
+    }
   }
 
   .response-form__element {
     width: 100%;
-    margin-bottom: 65px;
+    margin-bottom: 43px;
     padding: 0;
     border: 0;
+    &::after {
+      display: none;
+    }
     &--name {
       position: relative;
       box-sizing: border-box;
@@ -294,13 +332,20 @@
       }
     }
     &--contact {
-      margin-bottom: 50px;
+      margin-bottom: 35px;
+      label {
+      margin-bottom: 21px;
+      &:last-of-type {
+        margin-bottom: 17px;
+      }
+    }
       .response-form__title {
         margin-bottom: 25px;
         @include title-line;
       }
     }
     &--sights {
+      margin-bottom: 32px;
       .response-form__title {
         margin-bottom: 40px;
         @include title-line;
@@ -308,16 +353,25 @@
       .response-form__inner {
         display: flex;
         flex-wrap: wrap;
-        padding: 0 80px;
+        padding-left: 95px;
         label {
           box-sizing: border-box;
-          flex-basis: 240px;
+          flex-basis: 260px;
           margin-bottom: 35px;
+        }
+        .response-form__slide-park {
+          order: 2;
+        }
+        .response-form__mountain-bell {
+          order: 1;
+        }
+        .response-form__red-rocks {
+          order: 3;
         }
       }
     }
     &--emotions {
-      margin-bottom: 60px;
+      margin-bottom: 56px;
       .response-form__title {
         @include title-line;
       }
@@ -351,6 +405,7 @@
 
   .response-form {
     box-sizing: border-box;
+    margin-bottom: 103px;
     padding: 0 120px;
   }
 
@@ -364,8 +419,9 @@
       }
     }
     &--contact {
+      margin-bottom: 52px;
       .response-form__title {
-        margin-bottom: 75px;
+        margin-bottom: 70px;
       }
       .response-form__inner {
         display: flex;
